@@ -24,7 +24,7 @@ import net.hypixel.api.reply.FriendsReply.FriendShip;
 import net.hypixel.api.reply.StatusReply.Session;
 
 @Mod(id = "csonlinefriends", name = "CSOnlineFriends",
-        description = "Provides listing of currently online Hypixel friends.", version = "1.0.0",
+        description = "Provides listing of currently online Hypixel friends.", version = "2.0.0",
         dependencies = {"csmodloader:[1,2)", "cspackets:[1,2)", "csutils:[1,2)",
                 "cshypixelapi:[1.1,2)"})
 public class CSOnlineFriends implements Entrypoint
