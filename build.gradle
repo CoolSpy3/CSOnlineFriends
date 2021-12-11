@@ -40,6 +40,9 @@ repositories {
             password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
         }
     }
+    maven {
+        url 'https://repo.hypixel.net/repository/Hypixel/'
+    }
 }
 
 configurations {
@@ -52,7 +55,9 @@ dependencies {
     compileOnly 'com.coolspy3:csmodloader:1.0.1'
     compileOnly 'com.coolspy3:cspackets:1.0.0'
     compileOnly 'com.coolspy3:csutils:1.0.0'
-    compileOnly 'com.coolspy3:cshypixelapi:2.0.0'
+    compileOnly 'com.coolspy3:cshypixelapi:2.0.1'
+    compileOnly 'net.hypixel:HypixelAPI:3.0.0'
+    compileOnly 'com.github.KevinPriv:MojangAPI:1.0'
     testImplementation     'junit:junit:4.13'
 }
 
