@@ -24,9 +24,9 @@ import net.hypixel.api.reply.FriendsReply.FriendShip;
 import net.hypixel.api.reply.StatusReply.Session;
 
 @Mod(id = "csonlinefriends", name = "CSOnlineFriends",
-        description = "Provides listing of currently online Hypixel friends.", version = "2.0.2",
+        description = "Provides listing of currently online Hypixel friends.", version = "2.0.4",
         dependencies = {"csmodloader:[1.3.1,2)", "cspackets:[1.2.1,2)", "csutils:[1.1.1,2)",
-                "cshypixelapi:[2.1.1,3)"})
+                "cshypixelapi:[3,4)"})
 public class CSOnlineFriends implements Entrypoint
 {
 
@@ -64,7 +64,7 @@ public class CSOnlineFriends implements Entrypoint
                     try
                     {
                         onlineFriends.add(MCColor.YELLOW + MojangAPI.getName(other) + " - "
-                                + status.getGameType().getName() + "_" + status.getMode() + "_"
+                                + status.getServerType().getName() + "_" + status.getMode() + "_"
                                 + status.getMap());
                     }
                     catch (APIException | IOException e)
